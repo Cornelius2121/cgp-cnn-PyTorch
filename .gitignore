@@ -3,3 +3,5 @@ venv
 cifar-10-batches-py
 __pycache__
 cifar-10-python.tar.gz
+child.txt
+network_info.pickle
