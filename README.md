@@ -10,7 +10,7 @@ This repository is a fork of the official implementation by Masanori Suganuma, a
 * CUDA Version 10.2
 
 The Python package requirements can be installed with the command:
-`pip install torch===1.7.0 torchvision===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html`
+`pip install torch==1.10.0+cu102 torchvision==0.11.0+cu102 -f https://download.pytorch.org/whl/torch_stable.html`
 `pip install pandas==1.1.5 scikit-image==0.17.2`
 
 # Designing Convolutional Neural Network Architectures Based on Cartegian Genetic Programming
