@@ -4,13 +4,14 @@ This repository is a fork of the official implementation by Masanori Suganuma, a
 
 ## Personal Implementation Requirements for Function
 * Python 3.6.8
-* Pandas 1.1.15
+* Pandas 1.1.5
 * Scikit-Image 0.17.2
 * Pytorch 1.10.0
 * CUDA Version 10.2
 
 The Python package requirements can be installed with the command:
-`pip install -r requirements.txt`
+`pip install torch===1.7.0 torchvision===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html`
+`pip install pandas==1.1.5 scikit-image==0.17.2`
 
 # Designing Convolutional Neural Network Architectures Based on Cartegian Genetic Programming
 

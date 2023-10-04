@@ -1,5 +1,0 @@
-pandas==1.1.15
-scikit-image==0.17.2
--i https://download.pytorch.org/whl/torch_stable.html
-torch==1.10.0+cu102
-torchvision==0.11.0+cu102 
