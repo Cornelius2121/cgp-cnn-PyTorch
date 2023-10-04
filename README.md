@@ -1,6 +1,13 @@
 # cgp-cnn-PyTorch
 A Genetic Programming Approach to Designing CNN Architectures, In GECCO 2017 (oral presentation, Best Paper Award)
 
+## Personal Implementation Requirements for Function
+* Python 3.6.8
+* Pandas 1.1.15
+* Scikit-Image 0.17.2
+* torch==1.10.0+cu102 torchvision==0.11.0+cu102 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+
 # Designing Convolutional Neural Network Architectures Based on Cartegian Genetic Programming
 
 This repository contains the code for the following paper:
