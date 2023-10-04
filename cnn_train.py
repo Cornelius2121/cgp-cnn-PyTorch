@@ -38,7 +38,7 @@ def weights_init_normal(m):
     elif classname.find('Linear') != -1:
         init.uniform(m.weight.data, 0.0, 0.02)
     elif classname.find('BatchNorm2d') != -1:
-        init.uniform(m.weight.data, 1.0, 0.02)
+        init.uniform(m.weight.data, 0.02, 1.0)
         init.constant(m.bias.data, 0.0)
 
 def weights_init_normal_(m):
@@ -48,7 +48,7 @@ def weights_init_normal_(m):
     elif classname.find('Linear') != -1:
         init.uniform(m.weight.data, 0.0, 0.02)
     elif classname.find('BatchNorm2d') != -1:
-        init.uniform(m.weight.data, 1.0, 0.02)
+        init.uniform(m.weight.data, 0.02, 1.0)
         init.constant(m.bias.data, 0.0)
 
 def weights_init_xavier(m):
@@ -58,7 +58,7 @@ def weights_init_xavier(m):
     elif classname.find('Linear') != -1:
         init.xavier_normal(m.weight.data, gain=1)
     elif classname.find('BatchNorm2d') != -1:
-        init.uniform(m.weight.data, 1.0, 0.02)
+        init.uniform(m.weight.data, 0.02, 1.0)
         init.constant(m.bias.data, 0.0)
 
 def weights_init_kaiming(m):
@@ -68,7 +68,7 @@ def weights_init_kaiming(m):
     elif classname.find('Linear') != -1:
         init.kaiming_normal(m.weight.data, a=0, mode='fan_in')
     elif classname.find('BatchNorm2d') != -1:
-        init.uniform(m.weight.data, 1.0, 0.02)
+        init.uniform(m.weight.data, 0.02, 1.0)
         init.constant(m.bias.data, 0.0)
 
 def weights_init_orthogonal(m):
@@ -79,7 +79,7 @@ def weights_init_orthogonal(m):
     elif classname.find('Linear') != -1:
         init.orthogonal(m.weight.data, gain=1)
     elif classname.find('BatchNorm2d') != -1:
-        init.uniform(m.weight.data, 1.0, 0.02)
+        init.uniform(m.weight.data, 0.02, 1.0)
         init.constant(m.bias.data, 0.0)
 
 def init_weights(net, init_type='normal'):
@@ -191,7 +191,7 @@ class CNN_train():
                     traceback.print_exc()
                     return 0.
                 loss = criterion(output, label_)
-                train_loss += loss.data[0]
+                train_loss += loss.item()
                 loss.backward()
                 optimizer.step()
                 _, predicted = torch.max(output.data, 1)
