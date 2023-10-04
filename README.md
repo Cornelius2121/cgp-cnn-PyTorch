@@ -2,6 +2,8 @@
 A Genetic Programming Approach to Designing CNN Architectures, In GECCO 2017 (oral presentation, Best Paper Award).
 This repository is a fork of the official implementation by Masanori Suganuma, and has been updated to be compatible with a more recent version of Pytorch and CUDA.
 
+All credit goes to the authors of the original implementation. This repository is not actively supported.
+
 ## Personal Implementation Requirements for Function
 * Python 3.6.8
 * Pandas 1.1.5
