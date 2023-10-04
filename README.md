@@ -1,12 +1,13 @@
-# cgp-cnn-PyTorch
-A Genetic Programming Approach to Designing CNN Architectures, In GECCO 2017 (oral presentation, Best Paper Award)
+# cgp-cnn-PyTorch-Updated
+A Genetic Programming Approach to Designing CNN Architectures, In GECCO 2017 (oral presentation, Best Paper Award).
+This repository is a fork of the official implementation by Masanori Suganuma, and has been updated to be compatible with a more recent version of Pytorch and CUDA.
 
 ## Personal Implementation Requirements for Function
 * Python 3.6.8
 * Pandas 1.1.15
 * Scikit-Image 0.17.2
-* torch==1.10.0+cu102 torchvision==0.11.0+cu102 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
-
+* Pytorch 1.10.0
+* CUDA Version 10.2
 
 # Designing Convolutional Neural Network Architectures Based on Cartegian Genetic Programming
 
@@ -14,14 +15,6 @@ This repository contains the code for the following paper:
 
 Masanori Suganuma, Shinichi Shirakawa, and Tomoharu Nagao, "A Genetic Programming Approach to Designing Convolutional Neural Network Architectures," 
 Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '17, Best paper award), pp. 497-504 (2017) [[paper]](https://doi.org/10.1145/3071178.3071229) [[arXiv]](https://arxiv.org/abs/1704.00764)
-
-## Requirement
-We use the [PyTorch](https://pytorch.org/) framework for neural networks and tested on the following environment:
-
-* PyTorch version 0.2.0_4
-* Python version 3.6.2
-* CUDA version 8.0
-* Ubuntu 14.04 LTS
 
 ## Usage
 
