@@ -9,6 +9,9 @@ This repository is a fork of the official implementation by Masanori Suganuma, a
 * Pytorch 1.10.0
 * CUDA Version 10.2
 
+The Python package requirements can be installed with the command:
+`pip install -r requirements.txt`
+
 # Designing Convolutional Neural Network Architectures Based on Cartegian Genetic Programming
 
 This repository contains the code for the following paper:
