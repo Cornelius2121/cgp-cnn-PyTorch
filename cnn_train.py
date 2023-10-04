@@ -261,7 +261,7 @@ class CNN_train():
                 traceback.print_exc()
                 return 0.
             loss = criterion(output, label_)
-            test_loss += loss.data[0]
+            test_loss += loss.item()
             _, predicted = torch.max(output.data, 1)
             total += label_.size(0)
             correct += predicted.eq(label_.data).cpu().sum()
